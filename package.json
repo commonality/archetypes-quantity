@@ -1,0 +1,44 @@
+{
+  "name": "jsquantity",
+  "version": "1.0.0",
+  "description": "Represnts an amount of something measured according to some standard of measurement.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node_modules/.bin/grunt ci"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gregswindle/jsquantity"
+  },
+  "keywords": [
+    "quantity",
+    "metrics",
+    "measures",
+    "standardized"
+  ],
+  "author": "Greg Swindle <greg@swindle.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gregswindle/jsquantity/issues"
+  },
+  "dependencies": {
+    "isnumber": "^1.0.0",
+    "lodash": "^4.6.1"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "expect.js": "^0.3.1",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^5.0.0",
+    "grunt-cli": "^0.1.13",
+    "grunt-complexity": "^0.3.0",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-coveralls": "^1.0.0",
+    "grunt-mocha-cli": "^2.0.0",
+    "grunt-mocha-istanbul": "^3.0.1",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "uglify-js": "^2.6.2"
+  }
+}
