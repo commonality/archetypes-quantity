@@ -1,0 +1,12 @@
+{
+  "RADIX": 10,
+  "exponent": {
+    "KEY": "key"
+  },
+  "roundingPolicy": {
+    "numberOfDigits": 1,
+    "roundingDigit": 5,
+    "roundingStep": 1,
+    "roundingStrategy": "ROUND"
+  }
+}

@@ -1,11 +1,38 @@
 language: node_js
 node_js:
-  - "5"
-  - "5.1"
-  - "4"
-  - "4.2"
-  - "4.1"
-  - "4.0"
-  - "0.12"
-  - "0.11"
-  - "0.10"
+- '13'
+- '12'
+- '11'
+- '10'
+- '8'
+os:
+- linux
+- osx
+git:
+  depth: 1
+before_install:
+- "[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest"
+- chmod +x ./.github/ci/legal/fossa-init.sh
+- chmod +x ./.github/ci/qa/code-climate-init.sh
+install:
+- npm i
+before_script:
+- "./.github/ci/legal/fossa-init.sh"
+- "./.github/ci/qa/code-climate-init.sh"
+script:
+- npm run ci:test
+after_script:
+- npm run qa:review:sonar
+jobs:
+  include:
+  - stage: release
+    name: Publish to NPM (public registry)
+    node_js: lts/*
+    deploy:
+      provider: script
+      skip_cleanup: true
+      script:
+      - npx semantic-release --no-ci
+env:
+  global:
+    secure: hZIv7Cy8TSudFOISISPCXNK0WJKCSSdRgNHOqThhCbOXzJx6A7ZG7Tlf/+W7ie0Eee6Q2klA0Ydo41A2Uj3FSb8QbrJ2sA89A1TezEWRXOoO+qjMsjydtXIRzQJkPT+VQfHvDF3/ZtgcvSM1VAxvJxNYola8yuNrU513smC2YIznW/MUwvmBS0wnIT4AKBURXKH4ZMaF7iw2FW18ey6EYbGJacQyr9+IQfz1YgHg1g+Uuxfi4DL6BpfjcN5fbu8lnS2E1d0BNGR+rHbX72pNmZ7/mf2lhwt4ov3C7n0wetNydmaAVhGahHKZhz0cg0ulFveO75pUr9rNokS3fj5B3eScHyRqapxNKNaCgeC0Vwxq8G2jlFmFkdHVflEFy9kf4eaR1u82312unu+nVKvsN+fp3UcVg+yMDKybloNS/hHvQZx75F/FZ2l5c/wMQas6LPX+dVv++CamhkrodbFSjahObRm52i8ItvDoDfho6DdxakZvWznxIt9ZiR+7KmBJlt2pjC+ZG+A0AUJnSYAD2v4hqzaV8ToxavKvUiE/9MkHvuqcrsIWZfHQR/YicM7obBSvTLlKgP80HwciAH+gZWrh99OjI4p0gicZC/6XQ3v5TA/z0mm7506+1o2J3x6Wtz979W/T6EwCbFd24TjZlrSMQXp8oVq6wVyC74Y6Xa0=

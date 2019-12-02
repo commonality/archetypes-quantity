@@ -1,0 +1,37 @@
+{
+  "ampere": {
+    "definition": "A constant current, if maintained in two straight parallel conductors of infinite length, of negligible circular cross-section, and placed one (1) meter apart in a vacuum, would produce between these conductors a force equal to 2 x 10⁻⁷ newton per meter of length",
+    "name": "ampere",
+    "symbol": "A"
+  },
+  "candela": {
+    "definition": "The luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency",
+    "name": "candela",
+    "symbol": "cd"
+  },
+  "kelvin": {
+    "definition": "The thermodynamic temperature 1/273.16 the temperature of the triple point of water.",
+    "name": "kelvin",
+    "symbol": "K"
+  },
+  "kilogram": {
+    "definition": "The unit of mass equal to the international standard",
+    "name": "kilogram",
+    "symbol": "kg"
+  },
+  "meter": {
+    "definition": "Length of a path travelled by light in a vacuum during a time interval of 1/299792459 of a second",
+    "name": "meter",
+    "symbol": "m"
+  },
+  "mole": {
+    "definition": "The amount of substance of a system that contains as many elementary entities as there are atoms in 0.012 kilograms of Carbon 12",
+    "name": "mole",
+    "symbol": "mol"
+  },
+  "second": {
+    "definition": "The duration of 9,192,631,770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the cesium 133 atom",
+    "name": "second",
+    "symbol": "s"
+  }
+}

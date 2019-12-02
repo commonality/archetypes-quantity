@@ -1,0 +1,265 @@
+{
+  "subscripts": [
+    {
+      "char": "(",
+      "codePoint": "U+208D",
+      "glyph": "₍",
+      "localEngineCodePoint": 8333,
+      "name": "subscript-left-parenthesis"
+    },
+    {
+      "char": ")",
+      "codePoint": "U+208E",
+      "glyph": "₎",
+      "localEngineCodePoint": 8334,
+      "name": "subscript-right-parenthesis"
+    },
+    {
+      "char": "+",
+      "codePoint": "U+208A",
+      "glyph": "₊",
+      "localEngineCodePoint": 8330,
+      "name": "subscript-plus-sign"
+    },
+    {
+      "char": "-",
+      "codePoint": "U+208B",
+      "glyph": "₋",
+      "localEngineCodePoint": 8331,
+      "name": "subscript-minus-sign"
+    },
+    {
+      "char": "=",
+      "codePoint": "U+208C",
+      "glyph": "₌",
+      "localEngineCodePoint": 8332,
+      "name": "subscript-equals-sign"
+    },
+    {
+      "char": "a",
+      "codePoint": "U+2090",
+      "glyph": "ₐ",
+      "localEngineCodePoint": 8336,
+      "name": "latin-subscript-small-letter-a"
+    },
+    {
+      "char": "e",
+      "codePoint": "U+2091",
+      "glyph": "ₑ",
+      "localEngineCodePoint": 8337,
+      "name": "latin-subscript-small-letter-e"
+    },
+    {
+      "char": "o",
+      "codePoint": "U+2092",
+      "glyph": "ₒ",
+      "localEngineCodePoint": 8338,
+      "name": "latin-subscript-small-letter-o"
+    },
+    {
+      "char": "x",
+      "codePoint": "U+2093",
+      "glyph": "ₓ",
+      "localEngineCodePoint": 8339,
+      "name": "latin-subscript-small-letter-x"
+    },
+    {
+      "char": "Ə",
+      "codePoint": "U+2094",
+      "glyph": "ₔ",
+      "localEngineCodePoint": 8340,
+      "name": "latin-subscript-small-letter-schwa"
+    },
+    {
+      "char": "0",
+      "codePoint": "U+2080",
+      "glyph": "₀",
+      "localEngineCodePoint": 8320,
+      "name": "subscript-zero"
+    },
+    {
+      "char": "1",
+      "codePoint": "U+2081",
+      "glyph": "₁",
+      "localEngineCodePoint": 8321,
+      "name": "subscript-one"
+    },
+    {
+      "char": "2",
+      "codePoint": "U+2082",
+      "glyph": "₂",
+      "localEngineCodePoint": 8322,
+      "name": "subscript-two"
+    },
+    {
+      "char": "3",
+      "codePoint": "U+2083",
+      "glyph": "₃",
+      "localEngineCodePoint": 8323,
+      "name": "subscript-three"
+    },
+    {
+      "char": "4",
+      "codePoint": "U+2084",
+      "glyph": "₄",
+      "localEngineCodePoint": 8324,
+      "name": "subscript-four"
+    },
+    {
+      "char": "5",
+      "codePoint": "U+2085",
+      "glyph": "₅",
+      "localEngineCodePoint": 8325,
+      "name": "subscript-five"
+    },
+    {
+      "char": "6",
+      "codePoint": "U+2086",
+      "glyph": "₆",
+      "localEngineCodePoint": 8326,
+      "name": "subscript-six"
+    },
+    {
+      "char": "7",
+      "codePoint": "U+2087",
+      "glyph": "₇",
+      "localEngineCodePoint": 8327,
+      "name": "subscript-seven"
+    },
+    {
+      "char": "8",
+      "codePoint": "U+2088",
+      "glyph": "₈",
+      "localEngineCodePoint": 8328,
+      "name": "subscript-eight"
+    },
+    {
+      "char": "9",
+      "codePoint": "U+2089",
+      "glyph": "₉",
+      "localEngineCodePoint": 8329,
+      "name": "subscript-nine"
+    }
+  ],
+  "superscripts": [
+    {
+      "char": "0",
+      "codePoint": "U+2070",
+      "glyph": "⁰",
+      "localEngineCodePoint": 8304,
+      "name": "superscript-zero"
+    },
+    {
+      "char": "1",
+      "codePoint": "U+00B9",
+      "glyph": "¹",
+      "localEngineCodePoint": 185,
+      "name": "superscript-one"
+    },
+    {
+      "char": "2",
+      "codePoint": "U+00B2",
+      "glyph": "²",
+      "localEngineCodePoint": 178,
+      "name": "superscript-two"
+    },
+    {
+      "char": "3",
+      "codePoint": "U+00B3",
+      "glyph": "³",
+      "localEngineCodePoint": 179,
+      "name": "superscript-three"
+    },
+    {
+      "char": "4",
+      "codePoint": "U+2074",
+      "glyph": "⁴",
+      "localEngineCodePoint": 8308,
+      "name": "superscript-four"
+    },
+    {
+      "char": "5",
+      "codePoint": "U+2075",
+      "glyph": "⁵",
+      "localEngineCodePoint": 8309,
+      "name": "superscript-five"
+    },
+    {
+      "char": "6",
+      "codePoint": "U+2076",
+      "glyph": "⁶",
+      "localEngineCodePoint": 8310,
+      "name": "superscript-six"
+    },
+    {
+      "char": "7",
+      "codePoint": "U+2077",
+      "glyph": "⁷",
+      "localEngineCodePoint": 8311,
+      "name": "superscript-seven"
+    },
+    {
+      "char": "8",
+      "codePoint": "U+2078",
+      "glyph": "⁸",
+      "localEngineCodePoint": 8312,
+      "name": "superscript-eight"
+    },
+    {
+      "char": "(",
+      "codePoint": "U+207D",
+      "glyph": "⁽",
+      "localEngineCodePoint": 8317,
+      "name": "superscript-left-parenthesis"
+    },
+    {
+      "char": ")",
+      "codePoint": "U+207E",
+      "glyph": "⁾",
+      "localEngineCodePoint": 8318,
+      "name": "superscript-right-parenthesis"
+    },
+    {
+      "char": "+",
+      "codePoint": "U+207A",
+      "glyph": "⁺",
+      "localEngineCodePoint": 8314,
+      "name": "superscript-plus-sign"
+    },
+    {
+      "char": "-",
+      "codePoint": "U+207B",
+      "glyph": "⁻",
+      "localEngineCodePoint": 8315,
+      "name": "superscript-minus-sign"
+    },
+    {
+      "char": "=",
+      "codePoint": "U+207C",
+      "glyph": "⁼",
+      "localEngineCodePoint": 8316,
+      "name": "superscript-equals-sign"
+    },
+    {
+      "char": "i",
+      "codePoint": "U+2071",
+      "glyph": "ⁱ",
+      "localEngineCodePoint": 8305,
+      "name": "superscript-latin-small-letter-i"
+    },
+    {
+      "char": "n",
+      "codePoint": "U+207F",
+      "glyph": "ⁿ",
+      "localEngineCodePoint": 8319,
+      "name": "superscript-latin-small-letter-n"
+    },
+    {
+      "char": "9",
+      "codePoint": "U+2079",
+      "glyph": "⁹",
+      "localEngineCodePoint": 8313,
+      "name": "superscript-nine"
+    }
+  ]
+}

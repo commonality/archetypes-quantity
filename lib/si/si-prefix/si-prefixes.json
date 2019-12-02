@@ -1,0 +1,128 @@
+[
+  {
+    "definition": "Septillion",
+    "name": "yotta",
+    "power": 1e24,
+    "symbol": "Y"
+  },
+  {
+    "definition": "Sextillion",
+    "name": "zetta",
+    "power": 1e21,
+    "symbol": "Z"
+  },
+  {
+    "definition": "Quintillion",
+    "name": "exa",
+    "power": 1e18,
+    "symbol": "E"
+  },
+  {
+    "definition": "Quadrillion",
+    "name": "peta",
+    "power": 1e15,
+    "symbol": "P"
+  },
+  {
+    "definition": "Trillion",
+    "name": "tera",
+    "power": 1e12,
+    "symbol": "T"
+  },
+  {
+    "definition": "Billion",
+    "name": "giga",
+    "power": 1e9,
+    "symbol": "G"
+  },
+  {
+    "definition": "Million",
+    "name": "mega",
+    "power": 1e6,
+    "symbol": "M"
+  },
+  {
+    "definition": "Thousand",
+    "name": "kilo",
+    "power": 1e3,
+    "symbol": "k"
+  },
+  {
+    "definition": "Hundred",
+    "name": "hecto",
+    "power": 1e2,
+    "symbol": "h"
+  },
+  {
+    "definition": "Ten",
+    "name": "deka",
+    "power": 1e1,
+    "symbol": "da"
+  },
+  {
+    "definition": "",
+    "name": "",
+    "power": 1e0,
+    "symbol": ""
+  },
+  {
+    "definition": "Tenth of a",
+    "name": "deci",
+    "power": 1e-1,
+    "symbol": "d"
+  },
+  {
+    "definition": "Hundredth of a",
+    "name": "centi",
+    "power": 1e-2,
+    "symbol": "c"
+  },
+  {
+    "definition": "Thousandth of a",
+    "name": "milli",
+    "power": 1e-3,
+    "symbol": "m"
+  },
+  {
+    "definition": "Millionth of a",
+    "name": "micro",
+    "power": 1e-6,
+    "symbol": "µ"
+  },
+  {
+    "definition": "Billionth of a",
+    "name": "nano",
+    "power": 1e-9,
+    "symbol": "n"
+  },
+  {
+    "definition": "Trillionth of a",
+    "name": "pico",
+    "power": 1e-12,
+    "symbol": "p"
+  },
+  {
+    "definition": "Quadrillionth of a",
+    "name": "femto",
+    "power": 1e-15,
+    "symbol": "f"
+  },
+  {
+    "definition": "Quintillionth of a",
+    "name": "atto",
+    "power": 1e-18,
+    "symbol": "a"
+  },
+  {
+    "definition": "Sextillionth of a",
+    "name": "zepto",
+    "power": 1e-21,
+    "symbol": "z"
+  },
+  {
+    "definition": "Septillionth of a",
+    "name": "yocto",
+    "power": 1e-24,
+    "symbol": "y"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "complexityAnalysis.include": [
+    "**/dist/**",
+    "**/lib/**"
+  ],
+  "complexityAnalysis.exclude": [
+    "**/__tests__/**"
+  ],
+  "cSpell.ignoreWords": [
+    "base",
+    "comparate",
+    "paran",
+    "quantity",
+    "unit",
+    "uscu"
+  ]
+}

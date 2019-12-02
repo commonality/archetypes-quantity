@@ -1,44 +1,288 @@
 {
-  "name": "jsquantity",
+  "name": "@archetypes/quantity",
+  "description": "Represents an amount of something measured according to some standard of measurement.",
+  "type": "module",
   "version": "1.0.0",
-  "description": "Represnts an amount of something measured according to some standard of measurement.",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "node_modules/.bin/grunt ci"
+  "author": {
+    "email": "greg@swindle.net",
+    "name": "Greg Swindle"
+  },
+  "bugs": {
+    "url": "https://github.com/commonality/archetypes-quantity/issues"
+  },
+  "commitplease": {
+    "scope": "(\\S+)|(\\(\\S+\\):\\s{1}).*",
+    "style": "angular",
+    "types": [
+      "build",
+      "chore",
+      "ci",
+      "docs",
+      "feat",
+      "fix",
+      "perf",
+      "refactor",
+      "revert",
+      "style",
+      "test"
+    ]
+  },
+  "contributors": [
+    {
+      "name": "Greg Swindle",
+      "url": "https://github.com/gregswindle"
+    }
+  ],
+  "dependencies": {
+    "conf": "6.2.0",
+    "debug": "4.1.1",
+    "dotenv-extended": "2.5.0",
+    "lodash.get": "4.4.2",
+    "lodash.nth": "4.11.2",
+    "lodash.round": "4.0.4",
+    "lodash.tosafeinteger": "4.0.4",
+    "ow": "0.15.0",
+    "pluralize": "8.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.7.4",
+    "@babel/node": "7.7.4",
+    "@babel/preset-env": "7.7.4",
+    "@semantic-release/changelog": "3.0.6",
+    "@semantic-release/commit-analyzer": "6.3.3",
+    "@semantic-release/git": "7.0.18",
+    "@semantic-release/github": "5.5.5",
+    "@semantic-release/npm": "5.3.4",
+    "@semantic-release/release-notes-generator": "7.3.5",
+    "commitplease": "^3.2.0",
+    "coveralls": "3.0.9",
+    "eslint": "6.7.2",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-config-standard": "14.1.0",
+    "eslint-config-xo": "0.27.2",
+    "eslint-find-rules": "3.4.0",
+    "eslint-plugin-babel": "5.3.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-json": "2.0.1",
+    "eslint-plugin-no-unsafe-innerhtml": "^1.0.16",
+    "eslint-plugin-no-unsanitized": "^3.0.2",
+    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-scanjs-rules": "^0.2.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-sonarjs": "0.5.0",
+    "eslint-plugin-standard": "4.0.1",
+    "eslint-plugin-unicorn": "14.0.1",
+    "eslint-plugin-xss": "^0.1.9",
+    "git-repo-info": "2.1.1",
+    "husky": "3.1.0",
+    "jest": "24.9.0",
+    "jest-junit": "10.0.0",
+    "jest-sonar-reporter": "2.0.0",
+    "lint-staged": "9.5.0",
+    "nodemon": "2.0.1",
+    "recursive-readdir": "2.2.2",
+    "rollup": "1.27.7",
+    "rollup-plugin-commonjs": "10.1.0",
+    "rollup-plugin-json": "4.0.0",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-terser": "5.1.2",
+    "semantic-release": "15.13.31",
+    "sonarqube-scanner": "2.5.0"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">= 4.0.0"
+  },
+  "eslintConfig": {
+    "extends": [],
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/commonality/archetypes-quantity#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "jestSonar": {
+    "reportFile": "sonar-test-report.xml"
+  },
+  "keywords": [
+    "@archetypes",
+    "archetype",
+    "archetypes",
+    "conversion",
+    "convert",
+    "converter",
+    "derived-unit",
+    "derived-unit-term",
+    "labor",
+    "metric",
+    "quantity",
+    "round",
+    "rounding",
+    "rounding-policy",
+    "rounding-strategy",
+    "si",
+    "standard-conversion",
+    "system-of-units",
+    "unicode",
+    "unit",
+    "unit-converter"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:js:fix",
+      "git add"
+    ]
+  },
+  "main": "dist/@archetypes/quantity.js",
+  "module": "dist/@archetypes/quantity.esm.js",
+  "readme": "https://github.com/commonality/archtypes-quantity/README.md",
+  "release": {
+    "verifyConditions": [
+      "@semantic-release/changelog",
+      "@semantic-release/github",
+      "@semantic-release/npm"
+    ],
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "angular",
+          "releaseRules": [
+            {
+              "type": "build",
+              "release": "patch"
+            },
+            {
+              "type": "chore",
+              "release": "patch"
+            },
+            {
+              "type": "ci",
+              "release": "patch"
+            },
+            {
+              "type": "docs",
+              "release": "patch"
+            },
+            {
+              "type": "feat",
+              "release": "minor"
+            },
+            {
+              "type": "fix",
+              "release": "patch"
+            },
+            {
+              "type": "perf",
+              "release": "patch"
+            },
+            {
+              "type": "refactor",
+              "release": "patch"
+            },
+            {
+              "type": "style",
+              "release": "patch"
+            },
+            {
+              "type": "test",
+              "release": "patch"
+            }
+          ]
+        }
+      ],
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            {
+              "path": "package.json",
+              "label": "Product manifest"
+            },
+            {
+              "path": "CHANGELOG.md",
+              "label": "All product changes up-to and including this distribution"
+            },
+            {
+              "path": "LICENSE",
+              "label": "License for distribution"
+            },
+            {
+              "path": "README.md",
+              "label": "Installation and usage instructions for distribution"
+            },
+            {
+              "path": "dist/*.js",
+              "label": "Public API module and its private dependencies"
+            }
+          ]
+        }
+      ],
+      "@semantic-release/git"
+    ],
+    "prepare": [
+      {
+        "path": "@semantic-release/changelog",
+        "changelogTitle": "# Changelog"
+      },
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "message": "chore(release): ${nextRelease.gitTag}"
+        }
+      ]
+    ],
+    "publish": [
+      "@semantic-release/github",
+      "@semantic-release/npm"
+    ],
+    "success": false,
+    "fail": false
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gregswindle/jsquantity"
+    "url": "https://github.com/commonality/archetypes-quantity.git"
   },
-  "keywords": [
-    "quantity",
-    "metrics",
-    "measures",
-    "standardized"
-  ],
-  "author": "Greg Swindle <greg@swindle.net>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gregswindle/jsquantity/issues"
-  },
-  "dependencies": {
-    "isnumber": "^1.0.0",
-    "lodash": "^4.6.1"
-  },
-  "devDependencies": {
-    "browserify": "^13.0.0",
-    "expect.js": "^0.3.1",
-    "grunt": "^0.4.5",
-    "grunt-browserify": "^5.0.0",
-    "grunt-cli": "^0.1.13",
-    "grunt-complexity": "^0.3.0",
-    "grunt-contrib-jshint": "^0.11.3",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-coveralls": "^1.0.0",
-    "grunt-mocha-cli": "^2.0.0",
-    "grunt-mocha-istanbul": "^3.0.1",
-    "istanbul": "^0.4.2",
-    "mocha": "^2.4.5",
-    "uglify-js": "^2.6.2"
+  "scripts": {
+    "bundle": "rollup -c ./rollup.config.js --environment INCLUDE_DEPS,BUILD:production",
+    "bundle:clean": "rm -rf ./dist/ && rm -f *.tgz",
+    "ci:lint": "npm run ci:lint:js",
+    "ci:lint:js": "eslint --config .eslintrc.json . --fix -f json -o eslint-report.json",
+    "ci:security:audit:prod": "npm audit --production --only=prod",
+    "ci:test": "npm run env:init && npm run ci:lint:js && jest --coverage --ci --reporters=jest-junit --testResultsProcessor=jest-sonar-reporter",
+    "env:init": "node -r dotenv-extended ./lib/env-config.js",
+    "config:clear": "sh ./.scripts/config/clear.sh",
+    "config:info": "sh ./.scripts/config/info.sh",
+    "config:info:json": "sh ./.scripts/config/info-json.sh",
+    "config:reset": "sh ./.scripts/config/reset.sh",
+    "lint": "npm run lint:js:fix",
+    "lint:js:fix": "eslint --config .eslintrc.json . --ext .json --ext .js --fix",
+    "postbundle": "npm pack",
+    "postconfig:clear": "npm run config:info",
+    "postconfig:reset": "npm run config:info",
+    "posttest": "npm run security:audit:prod:fix",
+    "prebundle": "npm run bundle:clean",
+    "pretest": "npm run lint:js:fix",
+    "qa:review:sonar": "npm run ci:test && node -r ./.github/ci/qa/sonar-scan.js",
+    "security:audit:fix": "npm run security:audit:prod:fix",
+    "security:audit:prod:fix": "npm audit fix --production --only=prod",
+    "semantic-release": "semantic-release",
+    "start": "nodemon --exec babel-node lib/archetypes-quantity.js",
+    "test": "jest --config=\"./jest.config.js\" --coverage"
   }
 }

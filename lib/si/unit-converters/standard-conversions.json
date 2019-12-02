@@ -1,0 +1,128 @@
+[
+  {
+    "definition": "Septillion",
+    "name": "yotta",
+    "conversionFactor": 1e24,
+    "symbol": "Y"
+  },
+  {
+    "definition": "Sextillion",
+    "name": "zetta",
+    "conversionFactor": 1e21,
+    "symbol": "Z"
+  },
+  {
+    "definition": "Quintillion",
+    "name": "exa",
+    "conversionFactor": 1e18,
+    "symbol": "E"
+  },
+  {
+    "definition": "Quadrillion",
+    "name": "peta",
+    "conversionFactor": 1e15,
+    "symbol": "P"
+  },
+  {
+    "definition": "Trillion",
+    "name": "tera",
+    "conversionFactor": 1e12,
+    "symbol": "T"
+  },
+  {
+    "definition": "Billion",
+    "name": "giga",
+    "conversionFactor": 1e9,
+    "symbol": "G"
+  },
+  {
+    "definition": "Million",
+    "name": "mega",
+    "conversionFactor": 1e6,
+    "symbol": "M"
+  },
+  {
+    "definition": "Thousand",
+    "name": "kilo",
+    "conversionFactor": 1e3,
+    "symbol": "k"
+  },
+  {
+    "definition": "Hundred",
+    "name": "hecto",
+    "conversionFactor": 1e2,
+    "symbol": "h"
+  },
+  {
+    "definition": "Ten",
+    "name": "deka",
+    "conversionFactor": 1e1,
+    "symbol": "da"
+  },
+  {
+    "definition": "",
+    "name": "",
+    "conversionFactor": 1e0,
+    "symbol": ""
+  },
+  {
+    "definition": "Tenth of a",
+    "name": "deci",
+    "conversionFactor": 1e-1,
+    "symbol": "d"
+  },
+  {
+    "definition": "Hundredth of a",
+    "name": "centi",
+    "conversionFactor": 1e-2,
+    "symbol": "c"
+  },
+  {
+    "definition": "Thousandth of a",
+    "name": "milli",
+    "conversionFactor": 1e-3,
+    "symbol": "m"
+  },
+  {
+    "definition": "Millionth of a",
+    "name": "micro",
+    "conversionFactor": 1e-6,
+    "symbol": "µ"
+  },
+  {
+    "definition": "Billionth of a",
+    "name": "nano",
+    "conversionFactor": 1e-9,
+    "symbol": "n"
+  },
+  {
+    "definition": "Trillionth of a",
+    "name": "pico",
+    "conversionFactor": 1e-12,
+    "symbol": "p"
+  },
+  {
+    "definition": "Quadrillionth of a",
+    "name": "femto",
+    "conversionFactor": 1e-15,
+    "symbol": "f"
+  },
+  {
+    "definition": "Quintillionth of a",
+    "name": "atto",
+    "conversionFactor": 1e-18,
+    "symbol": "a"
+  },
+  {
+    "definition": "Sextillionth of a",
+    "name": "zepto",
+    "conversionFactor": 1e-21,
+    "symbol": "z"
+  },
+  {
+    "definition": "Septillionth of a",
+    "name": "yocto",
+    "conversionFactor": 1e-24,
+    "symbol": "y"
+  }
+]

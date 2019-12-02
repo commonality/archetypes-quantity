@@ -1,0 +1,12 @@
+.gitlab/rc/
+**/__fixtures__/**
+**/__mocks__/**
+**/*.test.js
+babel.config.js
+coverage
+dist/
+docs/
+jest.config.js
+lib/env-config.js
+rollup.config.js
+scripts/
